@@ -7,9 +7,25 @@
     <title>Document</title>
 </head>
 <body>
-    
+   
+ <input type="text" placeholder="kenarı giriniz..." id="kenar">   
+ <input type="button" value="Hesapla" id="hesapla">
+
 <script>
-    
+
+function hesapla(){
+    var sayi = document.getElementById("kenar").value;
+    sayi = Number(sayi);
+
+    var alan = sayi*sayi;
+    var cevre = sayi*4;
+
+    alert("Karenin Alanı :"+alan+"\n Karenin Çevresi :"+cevre);
+}
+
+var btn = document.getElementById("hesapla");
+btn.onclick = hesapla;
+
 </script>
 
 </body>
