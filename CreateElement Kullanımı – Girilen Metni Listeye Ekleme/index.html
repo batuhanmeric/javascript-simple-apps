@@ -8,5 +8,22 @@
 </head>
 <body>
     
+<input type="text" id="txtEleman" placeholder="İsim Girin...">
+<button id="btn">EKLE</button>
+<ul id="liste"></ul>
+
+
+<script>
+    var ul = document.querySelector("#liste");
+    var btnEkle = document.querySelector("#btn");
+    var ad = document.querySelector("#txtEleman");
+   
+    btnEkle.onclick = function(){
+        var eleman = document.createElement("li");
+        eleman.innerHTML = ad.value; 
+        ul.appendChild(eleman);
+    }
+
+</script>
 </body>
 </html>
