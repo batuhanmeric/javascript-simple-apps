@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>JS Alıştırmaları</title>
+    <style>
+        body{
+            background: black;           
+        }
+        h1{
+            color: #fff;
+            text-align: center;
+            font-weight: bold;
+            margin-top: 150px;
+        }
+        #btnTikla{
+            background-color: #FF0000;
+            width: 200px;
+            height: 100px;
+            color: white;
+            line-height: 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 250px auto;
+            cursor: pointer;
+    
+        }
+        #btnTikla:hover{
+        opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <h1>js İLE BASİT ALIŞTIRMALAR</h1>
+    <button id="btnTikla">TIKLA</button>
+
+    <script>
+        var btn = document.getElementById("btnTikla");
+        btnTikla.onclick = function(){
+            renk = window.getComputedStyle(btn).backgroundColor;
+            if(renk=="rgb(255, 0, 0)"){
+                btn.style.backgroundColor="#00FF00";
+            }
+            else{
+                btn.style.backgroundColor="#FF0000";
+            }
+        }
+    </script> 
+
+</body>
+</html>
