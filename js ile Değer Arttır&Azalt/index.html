@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<input type="text" id="text" value="0">
+<button onclick="artirma()" id="arttır">+</button>
+<button onclick="azaltma()" id="azalt"></button>
+
+
+<script>
+
+function artirma(){
+var a = document.getElementById("text").value;
+a = Number(a);
+a += 1;
+document.getElementById("text").value = a;
+
+}
+
+function azaltma(){
+var a = document.getElementById("text").value;
+a = Number(a);
+a -= 1;
+document.getElementById("text").value = a;
+
+}
+
+
+</script>
+
+
+</body>
+</html>
