@@ -1,0 +1,88 @@
+
+#modal-ac{
+    padding: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    background: green;
+    border: 1px solid green;
+    border-radius: 5px;
+    color: whitesmoke;
+    transition: all 400ms;
+    position: absolute;
+   
+    &:hover{
+        background: black;
+    }
+    &:focus{
+        outline: none;
+    }
+}
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.548);
+   form{
+       display: flex;
+       flex-direction: column;      
+       min-width: 30;
+       min-width: 30%;
+       padding: 10px;
+       background: white;
+       border-radius: 10px;
+       font-size: 15px;
+       font-weight: bold;
+       position: relative;
+       .kapat{
+           width: 20px;
+           height: 20px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin-top: 2px;
+        #modal-kapat{
+            position: absolute;      
+            display: flex;  
+            align-items: center;
+            justify-content: center;                 
+            margin-top: 1px;
+            right: 0;
+             cursor: pointer;
+             font-size: 25px;
+             padding: 5px;
+             transition: all 300ms;
+             &:hover{
+                 opacity: 0.8;
+             }
+             
+         }
+       }
+       input{
+           margin: 15px 0;
+           padding: 5px;
+           font-size: 15px;
+           
+       }
+      #form-buton{
+       background-color: #ff6378; 
+       font-size: 15px;
+       padding: 7px;
+       border-radius: 10px;
+       cursor: pointer;
+       color: whitesmoke;
+       border: 1px solid #ff6378;
+       transition: all 300ms;
+       &:hover{
+           opacity: 0.8;
+       }
+       &:focus{
+           outline: none;
+       }
+       }
+   }
+}

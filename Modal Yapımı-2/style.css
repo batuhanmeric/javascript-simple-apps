@@ -1,0 +1,120 @@
+#modal-ac {
+  padding: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  background: green;
+  border: 1px solid green;
+  border-radius: 5px;
+  color: whitesmoke;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  position: absolute;
+}
+
+#modal-ac:hover {
+  background: black;
+}
+
+#modal-ac:focus {
+  outline: none;
+}
+
+.modal {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: rgba(0, 0, 0, 0.548);
+}
+
+.modal form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 30;
+  min-width: 30%;
+  padding: 10px;
+  background: white;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: bold;
+  position: relative;
+}
+
+.modal form .kapat {
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 2px;
+}
+
+.modal form .kapat #modal-kapat {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1px;
+  right: 0;
+  cursor: pointer;
+  font-size: 25px;
+  padding: 5px;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.modal form .kapat #modal-kapat:hover {
+  opacity: 0.8;
+}
+
+.modal form input {
+  margin: 15px 0;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.modal form #form-buton {
+  background-color: #ff6378;
+  font-size: 15px;
+  padding: 7px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: whitesmoke;
+  border: 1px solid #ff6378;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+
+.modal form #form-buton:hover {
+  opacity: 0.8;
+}
+
+.modal form #form-buton:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
