@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'font-icon';
+    src: url('../font/font-icon.eot?71547238');
+    src: url('../font/font-icon.eot?71547238#iefix') format('embedded-opentype'),
+         url('../font/font-icon.woff2?71547238') format('woff2'),
+         url('../font/font-icon.woff?71547238') format('woff'),
+         url('../font/font-icon.ttf?71547238') format('truetype'),
+         url('../font/font-icon.svg?71547238#font-icon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+   
+   [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "font-icon";
+    font-style: normal;
+    font-weight: normal;
+    
+   
+    display: inline-block;
+    text-decoration: inherit;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+   }
+   
+  .icon-left-open:before { content: '\e803'; } /* '' */
+  .icon-right-open:before { content: '\e806'; } /* '' */
