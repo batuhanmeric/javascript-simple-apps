@@ -1,0 +1,29 @@
+ #slider {
+	 
+	 position:relative;
+	 margin:0 auto;
+	 width:600px;
+	 height:300px;
+	 font: 19px sans-serif;
+	 overflow:hidden;
+	 
+	 
+ }
+ 
+ #kontrol {
+	 
+	 position:absolute;
+	 right:0;
+	 bottom:10px;
+	 
+ }
+ 
+ #kontrol a {
+	 
+	 color:white;
+	 background: rgba(0,0,0,0.5);
+	 padding:10px;
+	 text-decoration:none;
+	 
+	 
+ }
