@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    font-size: 22px;
+}
+.ust{
+    background: #eee;
+    padding: 30px;
+    text-align: center;
+}
+#menu{
+    overflow: hidden;
+    background: #333;
+    
+    
+    a{
+        display: inline-block;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 14px 16px;
+        color: white;
+        
+     &:hover{
+         background: #eee;
+         color: black;
+     }
+     
+    }
+    .aktif{
+        background: darkgreen;
+       
+    }
+   
+}
+.yapıskan{
+    top: 0;
+    position: fixed;
+    width: 100%;
+}
+
+.icerik{
+    padding: 14px;
+}
+
+.yapıskan + .icerik{
+    padding-top: 60px;
+}
