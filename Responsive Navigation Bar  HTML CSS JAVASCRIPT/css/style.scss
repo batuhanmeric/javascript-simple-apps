@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;
+   
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 8vh;
+    background-color: #5D4954;
+
+    .logo{
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-size: 20px;
+    }
+    .nav-links{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 30%;
+        
+        li{
+            list-style: none;
+            display: flex;
+            
+           a{
+             text-decoration: none;            
+             display: flex;
+             color: #fff;
+             letter-spacing: 3px;
+             font-weight: bold;
+             font-size: 14px;
+             transition: .2s all;
+             &:hover{
+                 color: black;
+                 opacity: 0.8;
+             }
+           }
+        }
+    }
+
+    .burger{
+        display: none;
+        cursor: pointer;
+        div{
+            width: 25px;
+            height: 3px;
+            background-color: rgb(226,226,226);
+            margin: 5px;
+       
+        }
+
+    }
+    .togle .line1{
+        transform: rotate(-45deg) translate(-5px,6px);
+    }
+    
+    .toggle .line2{
+        opacity: 0;
+    }
+    
+    .togle .line3{
+        transform: rotate(45deg) translate(-5px,-6px);
+    }
+
+    .nav-active{
+        transform: translateX(0%);
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:768px){
+    body{
+        overflow-x: hidden;
+        .burger{
+            display: block;
+        }   
+    }
+    .nav-links{
+        position: absolute;
+        right: 0;
+        height: 92vh;
+        top: 8vh;
+        background-color: #5D4954;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+
+        li{
+            opacity: 0;
+        }
+    }
+}
+    
+
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+    
