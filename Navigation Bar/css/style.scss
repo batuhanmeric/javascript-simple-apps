@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.nav-bar{
+    background-color: #1d4052;
+    color: #fff;
+    padding: 20px;
+    font-family: sans-serif;
+ .menu-right{
+  text-align: right;
+  
+  span{
+      margin: 0 20px;
+      font-size: 28px;
+      cursor: pointer;
+      display: none;
+  }
+  ul{
+      li{
+          display: inline-block;
+          margin: 20px;
+          list-style: none;
+      }
+  }
+}
+}
+
+@media only screen and (max-width: 700px){
+    span{
+        display: block;
+    }
+    ul{
+        li{
+            display: block;
+        }
+    }
+}
