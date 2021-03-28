@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: oldlace;
+}
+
+.btn-ac {
+  background-color: #444;
+  border-radius: 5px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100px;
+  margin: 15px 0 15px 10px;
+}
+
+.btn-ac a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.btn-ac a:hover {
+  opacity: 0.9;
+}
+
+.side-nav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #444;
+  overflow-x: hidden;
+  padding-top: 50px;
+  -webkit-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+
+.side-nav a {
+  padding: 10px 10px 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  display: block;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.side-nav a:hover {
+  background-color: #555;
+  color: black;
+}
+
+.side-nav .btn-kapat {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 26px;
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#content {
+  padding-left: 30px;
+  -webkit-transition: margin-left 0.6s;
+  transition: margin-left 0.6s;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */
