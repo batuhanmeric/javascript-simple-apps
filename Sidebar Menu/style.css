@@ -1,0 +1,83 @@
+@import "icon";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.sidebar{
+    position: absolute;
+    width: 8vh;
+    min-height: 100vh;
+    background-color: purple;
+    transition: 0.5s ease;  
+    
+}
+ul{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: white;
+    justify-content: space-between;
+    height: 80vh;
+    margin-top: 5%;
+    margin-left: 0%;
+    font-size: 1.5rem;
+    
+}
+i{
+    padding: 0.5rem;
+}
+ul li{
+    cursor: pointer;
+}
+ul li:hover{
+    text-shadow: 1px 1px 5px white;
+}
+a{
+    color: white;
+    text-decoration: none;
+    opacity: 0;
+    padding: 0.5rem;
+    display: inline-block;
+    transition: 0.5s ease;
+}
+
+.burger-menu{
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+.burger-menu div{
+    height: 2px;
+    width: 25px;
+    background: white;
+    margin-top: 5px;
+}
+.sidebarwidth{
+    width: 25vh;
+}
+.burgerdivposition{
+    left: 90%;
+}
+.menuopacity{
+    opacity: 1;
+}
+
+@keyframes menuslide{
+    0%{
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
